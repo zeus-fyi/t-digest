@@ -1,10 +1,10 @@
 [package]
-name = "tdigest"
+name = "tdigest-rs"
 repository = "https://github.com/zeus-fyi/t-digest"
 version = "0.2.4"
 license = "Apache-2.0"
 description = "T-Digest algorithm in Rust"
-authors = ["Paul Meng <me@paulme.ng>"]
+authors = ["Paul Meng <me@paulme.ng>", "Alex George <alex@zeus.fyi>"]
 readme = "README.md"
 keywords = ["tdigest", "percentile", "statistics"]
 edition = "2021"
