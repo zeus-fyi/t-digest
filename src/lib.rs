@@ -61,14 +61,6 @@ impl Centroid {
             weight: OrderedFloat::from(weight),
         }
     }
-    #[inline]
-    pub fn ordered_mean(&self) -> OrderedFloat<f64> {
-        self.mean.clone()
-    }
-    #[inline]
-    pub fn ordered_weight(&self) -> OrderedFloat<f64> {
-        self.weight.clone()
-    }
 
     #[inline]
     pub fn mean(&self) -> f64 {
@@ -169,18 +161,8 @@ impl TDigest {
     }
 
     #[inline]
-    pub fn ordered_sum(&self) -> OrderedFloat<f64> {
-        ordered_float::OrderedFloat(*self.sum)
-    }
-
-    #[inline]
     pub fn count(&self) -> f64 {
         self.count.into_inner()
-    }
-
-    #[inline]
-    pub fn ordered_count(&self) -> OrderedFloat<f64> {
-        ordered_float::OrderedFloat(*self.count)
     }
 
     #[inline]
@@ -189,18 +171,8 @@ impl TDigest {
     }
 
     #[inline]
-    pub fn ordered_max(&self) -> OrderedFloat<f64> {
-        ordered_float::OrderedFloat(*self.max)
-    }
-
-    #[inline]
     pub fn min(&self) -> f64 {
         self.min.into_inner()
-    }
-
-    #[inline]
-    pub fn ordered_min(&self) -> OrderedFloat<f64> {
-        ordered_float::OrderedFloat(*self.min)
     }
 
     #[inline]
